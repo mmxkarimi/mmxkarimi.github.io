@@ -1,7 +1,268 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="وب سایت شخصی من">
+    <meta name="theme-color" content="#1e201d">
+    <title>محمد مهدی کریمی</title>
+
+
+    <link href="/css/beer.css" rel="stylesheet">
+    <link href="/css/app.css" rel="stylesheet">
+
+    <link rel="manifest" href="/manifest.json" />
+
+    <style>
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #111411;
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            border-radius: 50%;
+            border-top-color: #6acc77;
+            animation: spin 1s ease-in-out infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .loaded #preloader {
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.5s ease-out;
+        }
+    </style>
+</head>
+
+<body class="dark">
+    <div id="preloader">
+        <progress class="circle"></progress>
+    </div>
+    <header>
+        <nav class="top">
+
+            <button class="circle primary" onclick="ui('#menu')">
+                <i>menu</i>
+            </button>
+            <button class="circle primary" disabled onclick="ui('#menu')">
+                <i>search</i>
+            </button>
+            <div class="max">
+            </div>
+            <a class="button" href="/">محمد مهدی کریمی </a>
+        </nav>
+    </header>
+
+    <main class="scroll large-padding">
+        <div class="s m">
+            <article class="medium middle-align center-align fill">
+                <div>
+                    <img title="My Profile" class="circle large extra" src="/img/profile.webp">
+                    <h5>من محمد مهدی کریمی هستم</h5>
+                    <button class="chip fill">برنامه نویس وب و دسکتاپ</button>
+                    <div class="space"></div>
+                    <nav class="center-align">
+                        <a class="round button " href="https://github.com/Karimiprogramer">Github</a>
+                        <a class="round button" href="https://t.me/mmxkarimi">Telegram</a>
+                    </nav>
+                </div>
+            </article>
+            <br />
+            <article class="center-align">
+                <h5>درباره من</h5>
+                <p>
+                    محمد مهدی کریمی هستم ، برنامه نویس ، توسعه دهنده ، طراح ، مدرس و مشاور در زمینه ی برنامه نویسی طراحی
+                    وب و توسعه اپلیکیشن های دسکتاپ و موبایل از سال 1400 یادگیری برنامه نویسی را شروع کرده ام و حدود 4
+                    سال بصورت حرفه ای مشغول به کار و یادگیری در این حوزه می باشم
+                </p>
+            </article>
+            <br />
+            <article class="center-align">
+                <h5> کار هایی که من انجام میدم</h5>
+                <div class="row scroll">
+                    <article class="center-align">
+                        <i class="large">language</i>
+                        <h6>توسعه برنامه های وب</h6>
+                        <p>توسعه برنامه های وب با بهترین کیفیت و <br />نازل ترین قیمت</p>
+                    </article>
+                    <article class="center-align">
+                        <i class="large">developer_mode</i>
+                        <h6>توسعه برنامه های موبایل</h6>
+                        <p>توسعهبرنامه های موبایل با به <br />روز ترین متد ها</p>
+                    </article>
+                    <article class="center-align">
+                        <i class="large">developer_mode_tv</i>
+                        <h6>توسعه برنامه های دسکتاپ</h6>
+                        <p>توسعه انواع برنامه های چند سکویی<br /> و دسکتاپ برای نیاز های مختلف</p>
+                    </article>
+                </div>
+            </article>
+            <article class="center-align">
+                <h5>مهارت های من</h5>
+                <ul class=" responsive">
+                    <li>
+                        <h5>C#</h5><progress value="90" max="100"></progress>
+                    </li>
+                    <li>
+                        <h5>Linux</h5><progress value="70" max="100"></progress>
+                    </li>
+                    <li>
+                        <h5>Python</h5><progress value="50" max="100"></progress>
+                    </li>
+                    <li>
+                        <h5>Rust</h5><progress value="50" max="100"></progress>
+                    </li>
+                </ul>
+            </article>
+            <article class="center-align">
+                <h5>نمونه کار ها</h5>
+                <p>در حال حاضر نمونه کار قابل ارایه ندارم. 😁 به زودی میزارم</p>
+            </article>
+        </div>
+        <div class="l">
+            <article>
+                <div class="grid">
+                    <div class="s6">
+                        <article class="medium middle-align center-align fill">
+                            <div>
+                                <img title="My Image" class="circle large extra" src="/img/profile.webp">
+                                <h5>من محمد مهدی کریمی هستم</h5>
+                                <button class="chip fill">برنامه نویس وب و دسکتاپ</button>
+                                <div class="space"></div>
+                                <nav class="center-align">
+                                    <a class="round button " href="https://github.com/Karimiprogramer">Github</a>
+                                    <a class="round button" href="https://t.me/mmxkarimi">Telegram</a>
+                                </nav>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="s6">
+                        <article class="center-align transparent">
+                            <h5>درباره من</h5>
+                            <p>
+                                محمد مهدی کریمی هستم ، برنامه نویس ، توسعه دهنده ، طراح ، مدرس و مشاور در زمینه ی برنامه
+                                نویسی طراحی
+                                وب و توسعه اپلیکیشن های دسکتاپ و موبایل از سال 1400 یادگیری برنامه نویسی را شروع کرده ام
+                                و
+                                حدود 4
+                                سال بصورت حرفه ای مشغول به کار و یادگیری در این حوزه می باشم
+                            </p>
+                        </article>
+                    </div>
+                </div>
+
+            </article>
+            <div class="grid">
+                <div class="s6">
+                    <article class="center-align">
+                        <h5> کار هایی که من انجام میدم</h5>
+                        <div class="row scroll">
+                            <article class="center-align">
+                                <i class="large">language</i>
+                                <h6>توسعه برنامه های وب</h6>
+                                <p>توسعه برنامه های وب با بهترین کیفیت و <br />نازل ترین قیمت</p>
+                            </article>
+                            <article class="center-align">
+                                <i class="large">developer_mode</i>
+                                <h6>توسعه برنامه های موبایل</h6>
+                                <p>توسعه برنامه های موبایل با به <br />روز ترین متد ها</p>
+                            </article>
+                            <article class="center-align">
+                                <i class="large">developer_mode_tv</i>
+                                <h6>توسعه برنامه های دسکتاپ</h6>
+                                <p>توسعه انواع برنامه های چند سکویی<br /> و دسکتاپ برای نیاز های مختلف</p>
+                            </article>
+                        </div>
+                    </article>
+                </div>
+                <div class="s6">
+                    <article class="center-align">
+                        <h5>مهارت های من</h5>
+                        <ul class=" responsive">
+                            <li>
+                                <h5>C#</h5><progress value="90" max="100"></progress>
+                            </li>
+                            <li>
+                                <h5>Linux</h5><progress value="70" max="100"></progress>
+                            </li>
+                            <li>
+                                <h5>Python</h5><progress value="50" max="100"></progress>
+                            </li>
+                            <li>
+                                <h5>Rust</h5><progress value="50" max="100"></progress>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+
+            <article class="center-align">
+                <h5>نمونه کار ها</h5>
+                <p>در حال حاضر نمونه کار قابل ارایه ندارم. 😁 به زودی میزارم</p>
+            </article>
+        </div>
+
+    </main>
+
+    <dialog class="left no-padding" id="menu">
+        <nav class="drawer round">
+            <header>
+                <nav>
+                    <img class="circle" src="/img/profile.webp">
+                    <h6 class="max">سایت شخصی</h6>
+                    <button class="transparent circle large" onclick="ui('#menu')">
+                        <i>close</i>
+                    </button>
+                </nav>
+            </header>
+            <a href="/">
+                <i>home</i>
+                <span class="max">خانه</span>
+            </a>
+            <a href="/">
+                <i>search</i>
+                <span class="max">جست و جو</span>
+            </a>
+            <a href="/contact">
+                <i>contact_support</i>
+                <span class="max">ارتباط با من</span>
+            </a>
+        </nav>
+    </dialog>
+
+
+    <!-- Site Pre-loader Loader -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Add loaded class to body when DOM is ready
+            document.body.classList.add('loaded');
+
+            // For additional resources like images
+            window.addEventListener('load', function () {
+                // Make sure preloader is hidden
+                document.body.classList.add('loaded');
+            });
+        });
+    </script>
+
+    <script src="/js/beer.js" defer type="module"></script>
 </body>
+
 </html>
