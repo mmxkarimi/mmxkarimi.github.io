@@ -9,72 +9,35 @@
     <title>محمد مهدی کریمی</title>
 
 
-    <link href="/css/beer.css" rel="stylesheet">
-    <link href="/css/app.css" rel="stylesheet">
+    <link href="/assets/lib/beercss/beer.min.css" rel="stylesheet" />
+    <link href="/assets/lib/custom/app.css" rel="stylesheet" />
+    <link rel="icon" href="/assets/img/favicon.ico" />
+    <link rel="manifest" href="/assets/manifest.json" />
 
-    <link rel="manifest" href="/manifest.json" />
-
-    <style>
-        #preloader {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: #111411;
-            z-index: 9999;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .spinner {
-            width: 40px;
-            height: 40px;
-            border: 4px solid rgba(0, 0, 0, 0.1);
-            border-radius: 50%;
-            border-top-color: #6acc77;
-            animation: spin 1s ease-in-out infinite;
-        }
-
-        @keyframes spin {
-            to {
-                transform: rotate(360deg);
-            }
-        }
-
-        .loaded #preloader {
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.5s ease-out;
-        }
-    </style>
 </head>
 
 <body class="dark">
     <div id="preloader">
         <progress class="circle"></progress>
     </div>
-    <header>
-        <nav class="top">
 
-            <button class="circle primary" onclick="ui('#menu')">
-                <i>menu</i>
-            </button>
-            <button class="circle primary" disabled onclick="ui('#menu')">
-                <i>search</i>
-            </button>
-            <div class="max">
-            </div>
-            <a class="button" href="/">محمد مهدی کریمی </a>
-        </nav>
-    </header>
+    <nav class="top">
+        <button class="circle primary" onclick="ui('#menu')">
+            <i>menu</i>
+        </button>
+        <button class="circle primary" disabled onclick="ui('#menu')">
+            <i>search</i>
+        </button>
+        <div class="max">
+        </div>
+        <a class="button" href="/">محمد مهدی کریمی </a>
+    </nav>
 
     <main class="scroll large-padding">
         <div class="s m">
             <article class="medium middle-align center-align fill">
                 <div>
-                    <img title="My Profile" class="circle large extra" src="/img/profile.webp">
+                    <img title="My Profile" class="circle large extra" src="/assets/img/profile.webp">
                     <h5>من محمد مهدی کریمی هستم</h5>
                     <button class="chip fill">برنامه نویس وب و دسکتاپ</button>
                     <div class="space"></div>
@@ -262,7 +225,7 @@
         });
     </script>
 
-    <script src="/js/beer.js" defer type="module"></script>
+    <script src="/assets/lib/beercss/beer.min.js" defer type="module"></script>
 </body>
 
 </html>
